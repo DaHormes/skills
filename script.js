@@ -108,6 +108,27 @@ dataForm.addEventListener('submit', (event) => {
 });
 
 // Save data on form submission
+// Client-Side for Netlify
+
+  const form = document.getElementById('dataForm');
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const response = await fetch('/.netlify/functions/submit-form', {
+        method: 'POST',
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+      console.log(result);
+    } catch (error) {
+      console.error(error);
+    }
+  });
 
 // Load data on page load
 loadData();
