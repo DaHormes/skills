@@ -4,12 +4,18 @@
 exports.handler = async (event) => {
     const data = JSON.parse(event.body);
     // Store the data in a database or other storage mechanism
+
+    try {
+        // Store data in the database
+        const query = `INSERT INTO your_table (name, title, skills, category, workDone, contact) VALUES ($1, $2, $3, $4, $5, $6)`;
+        const values = [data.name, data.title, data.skills, data.category, data.workDone, data.contact]
+    }
   
-    return {
+    /*return {
       statusCode: 200,
       body: JSON.stringify({ message: 'Data submitted successfully' })
-    };
-  };
+    };*/
+};
 
 
 
