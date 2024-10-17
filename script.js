@@ -118,7 +118,7 @@ dataForm.addEventListener('submit', (event) => {
     const data = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('/.netlify/functions/submit-form', {
+      const response = await fetch('functions/submit-form', {
         method: 'POST',
         body: JSON.stringify(data)
       });
