@@ -6,7 +6,7 @@ const tableBody = document.getElementById('tableBody');
 
 // Sample data
 const data = [
-    { name: 'Gideon Doe', title: 'Software Engineer', skills: 'JavaScript, Python, React', category: 'Web Development', workDone: 'Built a full-stack web application', contact: 'johndoe@example.com' },
+    { name: 'Gideon Doe', title: 'Sofware Engineer', skills: 'JavaScript, Python, React', category: 'Web Development', workDone: 'Built a full-stack web application', contact: 'johndoe@example.com' },
     { name: 'John arare', title: 'Software Engineer', skills: 'JavaScript, Python, React', category: 'Web Development', workDone: 'Built a full-stack web application', contact: 'johndoe@example.com' },
     { name: 'Freg Doe', title: 'Software Engineer', skills: 'JavaScript, Python, React', category: 'Web Development', workDone: 'Built a full-stack web application', contact: 'johndoe@example.com' },
     // Add more rows here...
